@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<title>Express</title>
+	<link rel="stylesheet" href="/stylesheets/style.css"/>
+	<script src='/javascripts/jquery-3.4.1.min.js'></script>
+	<script src='/javascripts/jquery-ui.min.js'></script>
+</head>
+
+<body>
+	<div>
+		<form action="" method="" name="pin_form" id="pin_form" autocomplete="off" draggable="true" class="ui-draggable ui-draggable-handle" style="display:none" readonly>
+			<input id="pin_msg" type="text" value="" name="pin_msg" readonly>
+			<input id="pin_box" type="password" value="" name="pin_box" readonly/><br/>
+			<input type="button" class="pin_button" name="1" value="1" id="1" onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="2"
+				value="2" id="2"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="3"
+				value="3"
+				id="3"
+				onclick="addNumber(this);"/><br/><input
+				type="button"
+				class="pin_button"
+				name="4"
+				value="4"
+				id="4"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="5"
+				value="5" id="5"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="6"
+				value="6"
+				id="6"
+				onclick="addNumber(this);"/><br/><input
+				type="button"
+				class="pin_button"
+				name="7"
+				value="7"
+				id="7"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="8"
+				value="8" id="8"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button"
+				name="9"
+				value="9"
+				id="9"
+				onclick="addNumber(this);"/><br/><input
+				type="button"
+				class="pin_button clear"
+				name="-"
+				value="clear"
+				id="-" onclick="clearPin(this);"/><input
+				type="button"
+				class="pin_button"
+				name="0"
+				value="0"
+				id="0"
+				onclick="addNumber(this);"/><input
+				type="button"
+				class="pin_button del"
+				name="del"
+				value="delete"
+				id="del"
+				onclick="delNumber();"/><br/>
+			<hr/>
+			<input
+				type="button"
+				class="pin_button enter"
+				name="+"
+				value="enter"
+				id="+"
+				onclick="submitPin(pin_box);"/><input
+				type="button"
+				class="pin_button enter"
+				name="cancel"
+				value="cancel"
+				id="cancel"
+				onclick="hidePinPad();"/>
+		</form>
+		<br/>
+
+		<div id="control_box" name="control_box">
+			<input type="button" name="manage_alarm" value="" id="manage_alarm" onclick="manageAlarm();"/>
+			<input id="alarm_status" type="text" value="" name="alarm_status" disabled="true"/>
+			<input type="button" name="manage_pin" value="Change Pin" id="manage_pin" onclick="managePin();" style="display:none"/>
+		</div>
+		<div id="motion_pic_box" name="motion_pic_box">
+			<img id="motion_pic" name="motion_pic" src="/api/alarm/motionPic" alt="Motion Picture" style="display:none"/>
+		</div>
+	</div>
+</body>
+
+<script src='/javascripts/alarm-manager.js'></script>
+
+</html>
