@@ -17,7 +17,13 @@ pi-motion-alarm/ bin/ www public/ images/ javascripts/ stylesheets/ style.css in
 
 This generated file structure was basically maintained but files were added, routes/users.js and images were deleted, and the contents of the files were modified to implement the pi-motion-alarm application. The resulting final file structure looks like this:
 
-pi-motion-alarm/ api/ controllers/ alarm-controller.js routes/ alarm-routes.js index.js bin/ www lib/ model/ Constants.js motion-alarm.js public/ audio/ siren.mp3 javascripts/ alarm-manager.js jquery-3.4.1.min.js jquery-ui.min.js stylesheets/ style.css index.html .gitignore app.js package.json
+pi-motion-alarm/ api/ controllers/ alarm-controller.js
+routes/ alarm-routes.js index.js 
+bin/ www 
+lib/ model/ Constants.js motion-alarm.js 
+public/ audio/ siren.mp3 
+javascripts/ alarm-manager.js jquery-3.4.1.min.js jquery-ui.min.js 
+stylesheets/ style.css index.html .gitignore app.js package.json
 
 You run pi-motion-alarm by cd-ing into the pi-motion-alarm folder and typing:
 
