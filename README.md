@@ -65,4 +65,4 @@ public/index.html:  This is the main entry point for the browser app. It contain
 
 app.js:  This is server side code which contains the main Express application code
 
-package.json:  The package. json is used to configure the node application and to specify what other library code it depends upon. It also contains scripts for running the application.
+package.json: the package. json is used to configure the node application and to specify what other library code it depends upon. It also contains scripts for running the application.
